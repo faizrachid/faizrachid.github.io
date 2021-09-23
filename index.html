@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>تحديثات البرامج</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body class="p-3 mb-2 bg-warning text-dark">
+		<div class="container">
+		  <div class="row d-flex justify-content-center">
+				<div class ="col>
+				</div>
+				<div class="col">
+						<h4>
+							xyber.feedback@gmail.com
+							<small class="text-muted"> للتواصل معنا يرجى استعمال البريد الالكتروني</small>
+				  
+						</h4>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class ="col>
+				</div>
+				<div class="col">
+						<h4>
+							<a href="#"><img src="download.gif" style="width:42px;height:42px;" onclick="fileExists()"/></a>
+							<small class="text-muted"> يمكنكم تحميل المراحل الاربع المتبقية من تطبيق خمسة في خمسة من هنا</small>
+				  
+						</h4>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class ="col>
+				</div>
+				<div class="col">
+						<h4>
+							<img src="screen1.jpg" style="width:300px;height:300px;"/>
+							<small class="text-muted"> ثم الضغط من خلال التطبيق على زر التحديث كما في الصورة</small>
+				  
+						</h4>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class ="col>
+				</div>
+				<div class="col">
+						<h4>
+							<img src="screen2.jpg" style="width:300px;height:300px;"/>
+							"/download/update.db"
+							<small class="text-muted"> تحديد المكان الذي وضعتم فيه ملف التحديث مثلا </small>
+				  
+						</h4>
+				</div>
+			</div>
+		</div>
+<script>
+	function fileExists() {
+			var req = new XMLHttpRequest();
+			req.open('GET', "https://faizrachid.github.io/updates/update.db", false);
+			req.send();
+			if(req.status==404){
+				alert("نعتذر لا توجد اي تحديثات لحد الان,شكرا على تفهمكم");
+			}
+			else{
+			window.location.href = "https://faizrachid.github.io/updates/update.db";
+			}
+}
+</script>
+</body
+
+
+
+</html>
