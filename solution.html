@@ -10,9 +10,10 @@
 
 <body class="p-3 mb-2 bg-warning text-dark">
 	<nav class="navbar fixed-top navbar-dark bg-primary flex-row-reverse">
-				<a class="navbar-brand" href="index.html">الصفحة الرئيسية</a>
+				<a id ="def" class="navbar-brand" href="index.html">الصفحة الرئيسية</a>
 	</nav>
 <script>
+let sols=["def","000"];
 let steps=["المرحلة الاولى"];
 let domains =[];
 let items = ["التركيبة الاولى","التركيبة الثانية","التركيبة الثالثة","التركيبة الرابعة","التركيبة الخامسة"];
@@ -42,7 +43,7 @@ for(i=0;i<steps.length;i++){
 		for(k=0;k<items.length;k++){
 			row.innerHTML +='<div class="col text-center">'+
 							'<div class="border bg-light d-flex justify-content-center">'+
-							'<a class="navbar-brand" href="solutions/'+i+j+k+'.jpg">'+items[k]+'</a>'+
+							'<a id="' + i+ j+ k+'" class="navbar-brand" href="solutions/'+i+j+k+'.jpg">'+items[k]+'</a>'+
 							'</div></div>';
 		}
 		card.innerHTML +='</div></div>';
@@ -59,11 +60,8 @@ document.body.innerHTML += '</div>';
 
 let links=document.getElementsByClassName("navbar-brand");
 for(i=0;i<links.length;i++){
-	var req = new XMLHttpRequest();
-	req.open('GET', links[i].getAttribute("href"), false);
-	req.send();
-	if(req.status==404){
-	links[i].style.display="none";
+	if(!sols.includes(links[i].id)){
+		links[i].style.display="none";
 	}
 
 }
