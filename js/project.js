@@ -17,7 +17,7 @@ function init(){
 	var params = (new URL(window.location.href)).searchParams;
 	title.innerHTML=`<u>${params.get("prj")}</u>`;
 	video.src="projects/videos/"+ params.get("prj") + ".mp4";
-	home.href=window.location.protocol + "//" + window.location.hostname + "/app_update#projects";
+	home.href=window.location.protocol + "//" + window.location.hostname + "/#projects";
 	$.ajax({
 		url:"projects/overviews.json",
 		type:"GET"
