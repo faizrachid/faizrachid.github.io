@@ -15,6 +15,6 @@ for(let b of prj_btns){
 		let card = e.target.parentNode.parentNode.innerHTML;
 		let src=card.match(/<img src="projects\/images\/(.+)\.png/)[1];
 		window.location.replace(
-		window.location.protocol + "//" + window.location.hostname + "/app_update/project.html?prj=" + src);
+		window.location.protocol + "//" + window.location.hostname + "/project.html?prj=" + src);
 	});
 }
