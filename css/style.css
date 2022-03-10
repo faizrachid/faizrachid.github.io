@@ -1,0 +1,82 @@
+#technologies,#projects,#contact {
+margin-top:150px;
+}
+
+li,p,a {
+	font-family: sofia,Trirong,Lucida Console, monospace;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: Audiowide,Trirong,Lucida Console, monospace;
+	font-weight:500;
+}
+.btn.btn-info{
+	margin-top:10px;
+	background-color:rgb(240,240,240,0.1);
+	border:none;
+	font-family:sofia;
+	font-size:14px;
+	color:white;
+}
+@keyframes slide_down{
+            from{
+                min-height: 0;
+                height: 0px;
+                opacity: 0;
+            }
+            to{
+                height: 270px;
+                opacity: 1;
+            }
+}
+.collapse .card{
+	position:absolute;
+	top:550px;
+	height:270px;
+	width:260px;
+	background-color:rgba(255,245,235);
+	font-family: Trirong,Audiowide;
+	box-shadow:2px 2px rgba(100,100,100,0.8);
+	overflow: hidden;
+	animation-name: slide_down;
+	animation-duration: 1s;
+}
+#projects .card{
+	width: 14rem;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.form-control,.pb-3 button{
+	border:1px solid black;
+}
+.pb-3 button,label {
+	font-family:Trirong;
+}
+textarea {
+  resize: none;
+}
+.carousel-caption h5{
+	color:rgb(255,220,255);
+}
+ul{
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#home_img:hover{
+		opacity:1;
+}
+#home_img{
+		opacity:0.3;
+}
+
+section .btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.accordion-button{
+	font-size:28px;
+	font-family:Trirong;
+	font-weight:900;
+}

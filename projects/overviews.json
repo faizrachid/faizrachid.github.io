@@ -1,0 +1,11 @@
+{
+	"logosieb":"<ul><li><u><strong>Menu Test</strong></u><br>&nbspRun: for realtime capture from camera.<br>&nbspOn Reference: test made by reference.</li><li><u><strong>Menu Settings</strong></u><br>&nbsp<u>Calibrate:</u><br>&nbsp1-Connector Area: get the connector rect, calculate connector area and set the area threshold.<br>&nbsp2-Logo Features: set logo features as measured in the calibration page.<br>&nbsp<u>Connectors:</u><br>&nbsp1-Set Logo position.<br>&nbsp2-Calibrate Logo and find features like huMoments and Area, Length.</li></ul>"
+	,
+	
+	"4edger":"<ul><li><strong>1-Draw:</strong> Draw arabic alphabet shapes on the blue canvas.</li><li><strong>2-Predict:</strong> Click predict button then the corresponding arabic character with its segmentation are shown in the yellow box.</li><li><strong>3-Clear:</strong> Click clear button to clear the canvas.</li></ul>"
+	,
+	"mitv":"<ul><li><strong>1-Fetch links:</strong> Fetch channels links from MITV portal using devtools network tab, collects them as unique list injected into the DOM and MITV devtools panel.</li><li><strong>2-Post to the Server:</strong> Using local PHP server we get data from extension by Ajax request then we Send the collected links to MySql database at the server and we update the remote records.</li><li><strong>3-Schedule:</strong> We schedule the whole task to be executed systematically by VBScript implementing Windows Task Scheduler.</li></ul>"
+	,
+	"siptruck":"<ul><li><strong>1-Connect:</strong> Connects to Sql Server Database with server authentication, gets records from the table and makes treatment according to data in the record fields.</li><li><strong>2-cURL Request:</strong> Makes cURL request to distant API site provider with API Key and headers (SSL enabled) and gets response in case of success else it adds the record to the queue for next refresh state.</li><li><strong>3-Logs:</strong> A log session is created for every internet connection success then if an error occurs it waits until the error is off and the process is resuming. And if internet connection is lost the log session is closed.</li><li><strong>4-Data Protection:</strong> It protects both sheets and workbook with password to avoid records deletion or change.</li></ul>"
+	
+}
