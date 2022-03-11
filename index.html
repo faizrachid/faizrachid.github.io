@@ -99,7 +99,7 @@
 					border: 1px solid black;
 					border-radius: 5px;
 					margin-top:20px;">
-					<form action="mailto:xyberchannel@gmail.com" method="GET">	
+					<form onSubmit="send();">	
 						<div class="pb-3">
 							<label for="exampleFormControlInput1" class="form-label">Subject:</label>
 							<input name="subject" type="text" class="form-control" id="exampleFormControlInput1" required>
@@ -113,7 +113,13 @@
 								Send Message
 							</button>
 						</div>
-					</form>	
+					</form>
+					<script>
+						function send(e){
+						e.preventDefault();
+						window.open("mailto:xyberchannel@gmail.com?subject=Salam&body=first");
+						}
+					</script>
 			</div>
 		</section>
 
