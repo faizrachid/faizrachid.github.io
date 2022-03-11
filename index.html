@@ -117,6 +117,8 @@
 				<script>
 					function send(){
 						window.open(`mailto:xyberchannel@gmail.com?subject=${subject.value}&body=${body.value}`);
+						subject.value="";
+						body.value="";
 					}
 				</script>
 			</div>
