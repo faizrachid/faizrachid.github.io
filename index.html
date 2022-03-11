@@ -116,7 +116,11 @@
 					</div>
 				<script>
 					function send(){
-						window.open(`mailto:xyberchannel@gmail.com?subject=${subject.value}&body=${body.value}`);
+						if(subject.value != "" && body.value != ""){
+							window.open(`mailto:xyberchannel@gmail.com?subject=${subject.value}&body=${body.value}`);
+						}else{
+							alert("Please fill in all Fields!");
+						}
 						subject.value="";
 						body.value="";
 					}
