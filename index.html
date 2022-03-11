@@ -118,11 +118,11 @@
 					function send(){
 						if(subject.value != "" && body.value != ""){
 							window.open(`mailto:xyberchannel@gmail.com?subject=${subject.value}&body=${body.value}`);
+							subject.value="";
+							body.value="";
 						}else{
-							alert("Please fill in all Fields!");
+							alert("Please fill in the empty fields!");
 						}
-						subject.value="";
-						body.value="";
 					}
 				</script>
 			</div>
