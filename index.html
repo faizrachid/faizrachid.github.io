@@ -99,27 +99,21 @@
 					border: 1px solid black;
 					border-radius: 5px;
 					margin-top:20px;">
-				<form onSubmit="sendEmail" method="GET">	
-					<div class="pb-3">
-						<label for="exampleFormControlInput1" class="form-label">Subject:</label>
-						<input name="subject" type="text" class="form-control" id="exampleFormControlInput1" required>
-					</div>
-					<div class="pb-3">
-						<label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-						<textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="8" required></textarea>
-					</div>
-					<div class="pb-3" style="text-align:center;">
-						<button  class="btn btn-light" type="submit">
-							Send Message
-						</button>
-					</div>
-				</form>
-				<script>
-					function sendEmail(e){
-						e.preventDefault();
-   						window.open(`mailto:xyberchannel@gmail.com?subject=salam&body=first email`);
-					}
-				</script>	
+					<form action="mailto:xyberchannel@gmail.com" method="POST">	
+						<div class="pb-3">
+							<label for="exampleFormControlInput1" class="form-label">Subject:</label>
+							<input name="subject" type="text" class="form-control" id="exampleFormControlInput1" required>
+						</div>
+						<div class="pb-3">
+							<label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+							<textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="8" required></textarea>
+						</div>
+						<div class="pb-3" style="text-align:center;">
+							<button  class="btn btn-light" type="submit">
+								Send Message
+							</button>
+						</div>
+					</form>	
 			</div>
 		</section>
 
