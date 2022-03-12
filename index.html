@@ -119,11 +119,11 @@
  					function send(){
 						$.ajax({
 							url: 'https://api.sendinblue.com/v3/smtp/email',
-							type:'POST',
+							method:'POST',
 							headers:{
-								'accept': 'application/json',
-								'api-key':'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',
-								'content-type': 'application/json'
+								"accept": "application/json",
+								"api-key":"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",
+								"content-type": "application/json"
 							},
 							data:{
 								"sender":{  
