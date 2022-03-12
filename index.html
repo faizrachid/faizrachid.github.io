@@ -121,23 +121,23 @@
 							url: 'https://api.sendinblue.com/v3/smtp/email',
 							method:'POST',
 							headers:{
-								"accept": "application/json",
-								"api-key":"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",
-								"content-type": "application/json"
+								'accept': 'application/json',
+								'api-key':'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',
+								'content-type': 'application/json'
 							},
 							data:{
-								"sender":{  
-								      "name":"Sender Alex",
-								      "email":"xyber.feedback@gmail.com"
+								'sender':{  
+								      'name':'Sender Alex',
+								      'email':'xyber.feedback@gmail.com'
 								   },
-								   "to":[  
+								   'to':[  
 								      {  
-									 "email":"xyberchannel@gmail.com",
-									 "name":"Faiz Rachid"
+									 'email':'xyberchannel@gmail.com',
+									 'name':'Faiz Rachid'
 								      }
 								   ],
-								   "subject":"Hello world",
-								   "htmlContent":"Hello,This is my first transactional email sent from Sendinblue."
+								   'subject':'Hello world',
+								   'htmlContent':'Hello,This is my first transactional email sent from Sendinblue.'
 							},
 							success:(res,state) => {
 								alert("success");
