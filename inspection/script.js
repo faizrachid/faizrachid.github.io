@@ -21,7 +21,7 @@ var startbutton=document.getElementById('startRecognition');
 
 startbutton.onclick = function() {
   recognition.start();
-  hints.innerHTML = 'Ready to receive a color command.';
+  hints.value = 'Ready to receive a color command.';
 }
 
 recognition.onresult = function(event) {
@@ -34,7 +34,7 @@ recognition.onresult = function(event) {
   // The second [0] returns the SpeechRecognitionAlternative at position 0.
   // We then return the transcript property of the SpeechRecognitionAlternative object
   var color = event.results[0][0].transcript;
-  hints.textContent = color;
+  hints.value = color;
   console.log('Confidence: ' + event.results[0][0].confidence);
 }
 
@@ -43,9 +43,9 @@ recognition.onspeechend = function() {
 }
 
 recognition.onnomatch = function(event) {
-  hints.textContent = "I didn't recognise that color.";
+  hints.value = "I didn't recognise that color.";
 }
 
 recognition.onerror = function(event) {
-  hints.textContent = 'Error occurred in recognition: ' + event.error;
+  hints.value = 'Error occurred in recognition: ' + event.error;
 }
