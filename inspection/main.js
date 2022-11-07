@@ -54,7 +54,7 @@
     navigator.mediaDevices
       .getUserMedia({ 
         video:{ 
-          facingMode: { exact: "environment" }
+          facingMode: "user"
         }, 
         audio: false  
     })
