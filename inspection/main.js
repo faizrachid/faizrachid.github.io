@@ -18,7 +18,8 @@
   let canvas = null;
   let photo = null;
   let startbutton = null;
-
+  let savePhoto = null;
+  
   function showViewLiveResultButton() {
     if (window.self !== window.top) {
       // Ensure that if our document is in a frame, we get the user
@@ -42,7 +43,14 @@
     canvas = document.getElementById("canvas");
     photo = document.getElementById("photo");
     startbutton = document.getElementById("startbutton");
-
+    savePhoto = document.getElementById("savePhoto");
+    var hints = document.querySelector('.hints');
+    savePhoto.onclick=function(){
+      var link = document.getElementById('link');
+      link.setAttribute('download', hints.value + '.png');
+      link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+      link.click();
+    }
     navigator.mediaDevices
       .getUserMedia({ 
         video:{ 
