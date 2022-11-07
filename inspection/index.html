@@ -11,17 +11,15 @@
 </head>
 <body>
 <div class="contentarea" style="display:flex;justify-content:space-around;;">
-  <div class="camera">
+  <div class="camera" style="text-align:center;">
     <video id="video">Video stream not available.</video>
+    <button class = "btn-success" id="startbutton">Take photo</button>
   </div>
   <canvas id="canvas"> </canvas>
   <div class="output">
     <img id="photo" alt="The screen capture will appear in this box." style="margin-bottom:50px;"/>
 	<div id="btns">
-	<p>
-		<button class = "btn-success" id="startbutton">Take photo</button>
 		<button class = "btn-success" id="savePhoto">Save photo</button>
-	</p>
 	</div>
   </div>
 </div>
@@ -30,7 +28,6 @@
 	<br>
 	<div>
 		<button class ="btn-success" id="startRecognition">Start vocal command</button>
-		<button class ="btn-success" id="saveText">Save Text</button>
 	</div>
 </div>
 <script src="script.js"></script>
