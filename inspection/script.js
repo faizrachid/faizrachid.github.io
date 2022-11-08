@@ -21,7 +21,7 @@ var startbutton=document.getElementById('startRecognition');
 
 startbutton.onclick = function() {
   recognition.start();
-  hints.value = 'Ready to receive a color command.';
+  hints.value = 'Ready to receive a vocal command.';
 }
 
 recognition.onresult = function(event) {
@@ -43,7 +43,7 @@ recognition.onspeechend = function() {
 }
 
 recognition.onnomatch = function(event) {
-  hints.value = "I didn't recognise that color.";
+  hints.value = "I didn't recognise that command.";
 }
 
 recognition.onerror = function(event) {
